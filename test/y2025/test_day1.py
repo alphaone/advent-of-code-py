@@ -1,4 +1,4 @@
-from main import turn_and_count_passed_zeros, solve_B, solve_A
+from src.y2025.day1 import solve_A, solve_B, turn_and_count_passed_zeros
 
 
 def test_turn_and_count_passed_zeros():
@@ -32,7 +32,7 @@ def test_solve_A_example():
 
 
 def test_solve_A():
-    zeros = solve_A(open("2025/day1/input.txt").read().splitlines())
+    zeros = solve_A(open("resources/y2025/day1.txt").read().splitlines())
     assert zeros == 1147
 
 
@@ -42,5 +42,5 @@ def test_solve_B_example():
 
 
 def test_solve_B():
-    passed_zeros = solve_B(open("2025/day1/input.txt").read().splitlines())
+    passed_zeros = solve_B(open("resources/y2025/day1.txt").read().splitlines())
     assert passed_zeros == 6789

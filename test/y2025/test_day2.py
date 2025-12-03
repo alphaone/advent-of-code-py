@@ -1,6 +1,6 @@
-from main import is_invalid_a, is_invalid_b, solve_a, solve_b
+from src.y2025.day2 import is_invalid_a, is_invalid_b, solve_a, solve_b
 
-example_input = "11-22,95-115,998-1012,1188511880-1188511890,222220-222224,1698522-1698528,446443-446449,38593856-38593862,565653-565659,824824821-824824827,2121212118-2121212124"
+example_input = "11-22,95-115,998-1012,1188511880-1188511890,222220-222224,1698522-1698528,446443-446449,38593856-38593862,565653-565659,824824821-824824827,2121212118-2121212124"  # noqa: E501
 
 
 def test_invalid_a():
@@ -14,7 +14,7 @@ def test_solve_a_example():
 
 
 def test_solve_a():
-    assert solve_a(open("2025/day2/input.txt").read().strip().split(",")) == 24043483400
+    assert solve_a(open("resources/y2025/day2.txt").read().strip().split(",")) == 24043483400
 
 
 def test_invalid_b():
@@ -32,4 +32,4 @@ def test_solve_b_example():
 
 
 def test_solve_b():
-    assert solve_b(open("2025/day2/input.txt").read().strip().split(",")) == 38262920235
+    assert solve_b(open("resources/y2025/day2.txt").read().strip().split(",")) == 38262920235

@@ -46,7 +46,6 @@ def inner(part, chunk_length):
     first_chunk = part[:chunk_length]
     for i in range(chunk_length, len(part), chunk_length):
         if part[i : i + chunk_length] != first_chunk:
-            print("mismatch at", i)
             return False
 
     return True
